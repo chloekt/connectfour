@@ -4,13 +4,6 @@ let hole = document.getElementsByTagName('td');
 const turn = document.querySelector('.otherPlayer');
 
 
-//check table registers -- works
-for(let i = 0; i < hole.length; i++){
-  hole[i].addEventListener('click', (o) =>{
-    console.log(`${o.target.parentElement.rowIndex}, ${o.target.cellIndex}`);
-  })
-}
-
 //players
 let currentPlayer = 'R';
 turn.textContent = `Player 1's turn!`;
